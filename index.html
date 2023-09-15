@@ -12,54 +12,87 @@
                 height: 200px;
                 width: auto;
              }
+             
+             .main {
+                width: 800px;
+                margin-left: auto;
+			    margin-right: auto;
+             }
+
+             #wrapper {
+                display: flex;
+                justify-content: center;
+             }
+
+             #columns {
+                width: 385px;
+                padding: 15px;
+             }
+
         </style>
 
     </head>
 
     <body>
+        <div class="main">
 
-        <h1>Stanford Guo</h1>
+            <div id="header">
+                <h1>Stanford Guo</h1>
 
-        <hr>
+                <p>Email me at: <a href="mailto:guostanf@usc.edu">guostanf@usc.edu</a>.</p>
+            
+            </div>
 
-        <p>Email me at: <a href="mailto:guostanf@usc.edu">guostanf@usc.edu</a>.</p>
+            <hr>
 
-        <p>My favorite color is:  <strong>Dark Sea Green</strong></p>
+            <div id="wrapper">
 
-        <p>My favorite website is: <a target="_blank" href="http://www.staggeringbeauty.com/">Staggering Beauty</a></p>
+                <div id="columns">
+                    <p>My favorite color is:  <strong>Dark Sea Green</strong></p>
 
-        <p>My favorite activity is: Crocheting</p>
+                    <p>My favorite website is: <a target="_blank" href="http://www.staggeringbeauty.com/">Staggering Beauty</a></p>
 
-        <img src="img/crochet.webp" alt="Crocheting Picture">
+                    <p>My favorite activity is: Crocheting</p>
 
-        <hr>
-        
-        <p>Fall 2023 Schedule:</p>
-        <ul>
-            <li>ECON 352: Macroeconomics for Business</li>
-            <li>ITP 104: Introduction to Web Development</li>
-            <li>EASC 150: East Asian Societies</li>
-            <li>MUIN 272: Basics of the Music Industry</li>
-            <li>BUAD 307: Marketing Fundamentals</li>
-        </ul>
+                    <img src="img/crochet.webp" alt="Crocheting Picture">
+                
+                </div>
 
-        <hr>
+                <div id="columns">
+                    <p>Fall 2023 Schedule:</p>
+                    <ul>
+                        <li>ECON 352: Macroeconomics for Business</li>
+                        <li>ITP 104: Introduction to Web Development</li>
+                        <li>EASC 150: East Asian Societies</li>
+                        <li>MUIN 272: Basics of the Music Industry</li>
+                        <li>BUAD 307: Marketing Fundamentals</li>
+                    </ul>
+                </div>
 
-        <p>Completed Assignments:</p>
-        <ul>
-            <li><a target="_blank" href="assignment_01/resume.html">Assignment 1: Web Resume</a></li>
-            <li><a target="_blank" href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
-        </ul>
+            </div>
 
-        <hr>
+            <hr>
 
-        <p>Completed Labs:</p>
-        <ul>
-            <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
-            <li><a target="_blank" href="lab_03/resume.html">Lab 3: Updated Resume</a></li>
-        </ul>
+            <div id="wrapper">
+                <div id="columns">
+                    <p>Completed Assignments:</p>
+                    <ul>
+                        <li><a target="_blank" href="assignment_01/resume.html">Assignment 1: Web Resume</a></li>
+                        <li><a target="_blank" href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
+                    </ul>
+                </div>
 
+                <div id="columns">
+                    <p>Completed Labs:</p>
+                    <ul>
+                        <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
+                        <li><a target="_blank" href="lab_03/resume.html">Lab 3: Updated Resume</a></li>
+                        <li><a target="_blank" href="index.html">Lab 4: Student Page Layout</a></li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
     </body>
     
 
