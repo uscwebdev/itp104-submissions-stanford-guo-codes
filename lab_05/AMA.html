@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ask me anything! | AMA</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        #main {
+                width: 800px;
+			    margin-left: auto;
+			    margin-right: auto;
+        }
+
+        #form-wrapper {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .form-row {
+			margin: 10px;
+			display: flex;
+		}
+
+		.left-col {
+			width: 200px;
+		}
+
+        .check-margins {
+            margin: 0px 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+		<h1>ASK ME ANYTHING!</h1>
+	</div>
+
+    <hr>
+
+    <div id="main">
+        <form action="confirmation.html">
+
+            <div id="form-wrapper">
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="first-name-id">First Name:</label>
+                    </div>
+                    <input type="text" id="first-name-id" placeholder="Tommy">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="last-name-id">Last Name:</label>
+                    </div>
+                    <input type="text" id="last-name-id" placeholder="Trojan">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="email-id">E-mail:</label>
+                    </div>
+                    <input type="text" id="email-id" placeholder="ttrojan@usc.edu">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="phone-number-id">Phone Number:</label>
+                    </div>
+                    <input type="text" id="phone-number-id" placeholder="(123) 456-7890">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Have we met before?
+                    </div>
+    
+                    <div class="check-margins">
+                        <label>
+                            <input type="radio" name="acquaintance">
+                            Yes
+                        </label>
+                    </div>
+
+                    <div class="check-margins">
+                        <label>
+                            <input type="radio" name="acquaintance">
+                            No
+                        </label>
+                    </div>
+
+                    <div class="check-margins">
+                        <label>
+                            <input type="radio" name="acquaintance">
+                            We've met online
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        How did you hear about me?
+                    </div>
+    
+                    <div class="check-margins">
+                        <label>
+                            <input type="checkbox">
+                            Friends
+                        </label>
+                    </div>
+    
+                    <div class="check-margins">
+                        <label>
+                            <input type="checkbox">
+                            Family
+                        </label>
+                    </div>
+    
+                    <div class="check-margins">
+                        <label>
+                            <input type="checkbox">
+                            Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="topic-id">Topic:</label>
+                    </div>
+    
+                    <select id="topic-id">
+                        <option>Academics</option>
+                        <option>Extracurriculars</option>
+                        <option>Other...</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="question-id">Question:</label>
+                    </div>
+    
+                    <textarea id="question-id" placeholder="Hi there! I have a questions about..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox">
+                        I accept terms & conditions
+                    </label>
+                </div>
+    
+                <div class="form-row">
+                    
+                    <button type="submit">Submit</button>
+
+                    <div class="check-margins">
+                        <button type="reset">Reset</button>
+                    </div>
+                </div>
+
+            </div> 
+
+        </form>
+    </div>
+</body> 
+</html>
+
+
+
