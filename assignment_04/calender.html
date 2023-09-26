@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stanford Guo | Calendar</title>
+
+        <style>
+
+            body {
+                margin: 0px;
+                background-color: lavender;
+            }
+            #main {
+                width: 1100px;
+			    margin-left: auto;
+			    margin-right: auto;
+                margin-top: 0px;
+                background-color: floralwhite;
+            }
+
+            #header {
+                height: 350px;
+			    line-height: 350px;
+                text-align: center  ;
+                font-style: italic;
+                font-size: 1.5em;
+                color: floralwhite  ;
+
+                background-image: url(img/folklore.jpeg);
+                background-size: cover;
+			    background-position: center;
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th {
+                margin: 0px;
+                border: 1px solid black;
+			    text-align: center;
+                padding: 5px;
+
+                /*
+                    width of #main = 1100px
+                    # of cells = 7
+                    width of borders = 1px * 8 = 8px
+
+                    1100px - 8px = 1092px for 4 cells left
+                    1092px / 7 = 156px per cell
+                */
+                width: 156px;
+                font-style: italic;
+            }
+
+            td {
+                border: 1px solid black;
+                text-align: center;
+                width: 156px;
+                height: 125px;
+                padding: 5px;
+                font-style: italic;
+		    }
+
+            .dates {
+                vertical-align: top;
+                text-align: right;
+                padding: 5px;
+            }
+
+            .gray-dates {
+                color: gray;
+                vertical-align: top;
+                text-align: right;
+            }
+
+            .description {
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+
+                text-align: center;
+                margin: auto;
+                margin-top: 25px;
+
+                border-radius: 15px;
+                opacity: 0.6;
+                color: black;
+                background-color: floralwhite;
+
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            #birthday {
+                background-image: url(img/baby_photo.jpg);
+                background-size: cover;
+			    background-position: center;
+                height: 100%;
+
+                vertical-align: top;
+                text-align: right;
+                font-weight: bold;
+                color: floralwhite;
+            }
+
+            #mothers-day {
+                background-image: url(img/mothers_day.jpg);
+                background-size: cover;
+			    background-position: center;
+                height: 100%;
+
+                vertical-align: top;
+                text-align: right;
+                font-weight: bold;
+                color: midnightblue;
+            }
+
+            #singapore {
+                background-image: url(img/singapore.jpg);
+                background-size: cover;
+			    background-position: center;
+                height: 100%;
+
+                vertical-align: top;
+                text-align: right;
+                font-weight: bold;
+                color: floralwhite;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <h1>may 2023</h1>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+
+                <tr>
+                    <td class="gray-dates">30</td>
+                    <td class="dates">1</td>
+                    <td class="dates">2</td>
+                    <td class="dates">3</td>
+                    <td class="dates">4</td>
+                    <td class="dates">5</td>
+                    <td class="dates">6</td>
+                </tr>
+
+                <tr>
+                    <td class="dates">7</td>
+                    <td class="dates">8</td>
+                    <td class="dates">9</td>
+                    <td class="dates">10</td>
+                    <td class="dates">11</td>
+                    <td id="singapore">
+                        12
+                        <p class="description">
+                            Singapore Trip
+                        </p>
+                    </td>
+                    <td class="dates">13</td>
+                </tr>
+
+                <tr>
+                    <td id="mothers-day">
+                        14
+                        <p class="description">
+                            Mother's Day
+                        </p>
+                    </td>
+                    <td class="dates">15</td>
+                    <td class="dates">16</td>
+                    <td class="dates">17</td>
+                    <td class="dates">18</td>
+                    <td class="dates">19</td>
+                    <td class="dates">20</td>
+                </tr>
+
+                <tr>
+                    <td class="dates">21</td>
+                    <td class="dates">22</td>
+                    <td class="dates">23</td>
+                    <td class="dates">24</td>
+                    <td class="dates">25</td>
+                    <td class="dates">26</td>
+                    <td id="birthday">
+                        27
+                        <p class="description">
+                            My Birthday
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dates">28</td>
+                    <td class="dates">29</td>
+                    <td class="dates">30</td>
+                    <td class="dates">31</td>
+                    <td class="gray-dates">1</td>
+                    <td class="gray-dates">2</td>
+                    <td class="gray-dates">3</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>
