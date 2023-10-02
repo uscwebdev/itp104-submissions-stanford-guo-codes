@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#navbar > a {
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+    font-style: italic;
+    display: block;
+
+    color: steelblue;
+
+    border-bottom: 5px solid floralwhite;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: darkseagreen;
+    background-color: honeydew;
+    border-bottom: 5px solid darkseagreen;
+}
+
+#full-wrapper {
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: floralwhite;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+
+    height: 50px;
+    line-height: 50px;
+}
