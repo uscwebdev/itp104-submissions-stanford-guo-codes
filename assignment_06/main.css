@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Folklore Font" ;
+    src: url('fonts/folklore_font.ttf');
+}
+
+body {
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+h1 {
+    margin: 0px;
+    font-family: "Folklore Font", cursive;
+}
+
+#navbar > a {
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+    font-style: italic;
+    display: block;
+
+    color: steelblue;
+
+    border-bottom: 5px solid floralwhite;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+#navbar a:hover, #navbar #highlight-nav{
+    color: honeydew;
+    background-color: darkseagreen;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#navbar li {
+    background-color: honeydew;
+    /* 
+        width of #main 720px;
+        720px / 4 = 180px;
+    */
+    width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#navbar a {
+    color: darkseagreen;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#sub-menu li:hover {
+    color: darkseagreen;
+    background-color: honeydew;
+}
+
+#full-wrapper {
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: floralwhite;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 1.1em;
+
+    height: 50px;
+    line-height: 50px;
+}
