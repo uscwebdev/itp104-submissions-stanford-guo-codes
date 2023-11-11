@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stanford Guo | CSS Effects</title>
+
+        <style>
+
+            h1 {
+                margin: 0px;
+                font-family: 'Canela', cursive;
+            }
+
+            body {
+                margin: 0px;
+                background-color: royalblue;
+            }
+
+            #header {
+                height: 500px;
+			    line-height: 500px;
+                text-align: center;
+                font-size: 1.5em;
+                color: floralwhite;
+
+                background-image: url(img/Lorde_bkng.jpeg);
+                background-size: cover;
+			    background-position: center;
+            }
+
+            .box {
+                width: 350px;
+                height: 350px;
+
+                box-shadow: 0px 0px 0px 10px white;
+
+                transition: all 1s;
+            }
+
+            #ph {
+                background-image: url(img/Pure_Heroine.webp);
+                background-size: cover;
+
+                position: relative;
+                left: 300px;
+
+                transition: all 1s;
+            }
+
+            #melodrama {
+                background-image: url(img/Melodrama.jpeg);
+                background-size: cover;
+                
+                position: relative;
+
+                transition: all 1s;
+            }
+
+            #sp {
+                background-image: url(img/Solar_Power.webp);
+                background-size: cover;
+
+                position: relative;
+                right: 300px;
+
+                transition: all 1s;
+            }
+
+            #wrapper {
+                margin-top: 200px;
+                margin-bottom: 200px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #wrapper:hover div {
+                transform: scale(1.2);
+            }
+
+            #wrapper:hover #ph {
+                transform: rotate(-35deg) translate(-250px, -200px);
+            }
+
+            #wrapper:hover #melodrama {
+                transform: translateY(-100px);
+            }
+
+            #wrapper:hover #sp {
+                transform: rotate(35deg) translate(250px, -200px);
+            }
+
+            
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Lorde Albums</h1>
+        </div>
+
+        <div id="wrapper">
+
+            <div id="ph" class="box"></div>
+            <div id="melodrama" class="box"></div>
+            <div id="sp" class="box"></div>
+            
+
+
+        </div>
+
+
+    </body>
+
+</html>
