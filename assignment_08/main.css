@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Stardew Font" ;
+    src: url('fonts/Stardew_Valley.ttf');
+}
+
+@font-face {
+    font-family: "Textbox" ;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+#header {
+    height: 600px;
+    line-height: 600px;
+    text-align: center  ;
+    font-size: 2em;
+}
+
+h1 {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    
+    background-color: cornflowerblue;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    background-color: #028a0f;
+
+    width: 200px;
+    text-align: center;
+
+    margin: 0px 2px;
+}
+
+#navbar a {
+    color: floralwhite;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+
+    transition: all 0.5s;
+}
+
+#navbar a:hover, #navbar #highlight-nav{
+    color: floralwhite;
+    background-color: #5DBB63
+}
+
+#footer {
+    color: #f4d497;
+    background-color: #b66c3f;
+    text-align: center;
+    font-size: 1.1em;
+
+    height: 50px;
+    line-height: 50px;
+}
+
+
