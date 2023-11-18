@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stanford Guo | Image Puzzle</title>
+
+        <style>
+
+            body {
+                margin: 0px;
+                background-color: royalblue;
+            }
+
+            #main {
+                width: 1000px;
+			    margin-left: auto;
+			    margin-right: auto;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+            
+            #header {
+                height: 300px;
+                line-height: 300px;
+                text-align: center;
+                font-size: 1.5em;
+                color: floralwhite;
+
+                background-image: url(img/header.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            #wrapper {
+                width: 1000px;
+               
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .rows {
+                display: flex;
+                justify-content: center;
+            }
+
+            #movement-one {
+                position: relative;
+
+                right: 25px;
+                
+            }
+
+            #movement-two {
+                position: relative;
+
+                top: 25px;
+                left: 25px;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>
+                melodrama image puzzle
+            </h1>
+        </div>
+
+
+        <div id="main">
+
+            <div id="wrapper">
+
+                <div class="rows">
+
+                    <img id="movement-one" src="img/row-1-column-1.jpg" alt="row 1 column 1">
+
+                    <img id="movement-two" src="img/row-1-column-2.jpg" alt="row 1 column 2">
+
+                    <img id="movement-one" src="img/row-1-column-3.jpg" alt="row 1 column 3">
+
+                </div>
+
+                <div class="rows">
+
+                    <img id="movement-two" src="img/row-2-column-1.jpg" alt="row 2 column 1">
+
+                    <img id="movement-one" src="img/row-2-column-2.jpg" alt="row 2 column 2">
+
+                    <img id="movement-two" src="img/row-2-column-3.jpg" alt="row 2 column 3">
+
+                </div>
+
+                <div class="rows">
+
+                    <img id="movement-one" src="img/row-3-column-1.jpg" alt="row 3 column 1">
+
+                    <img id="movement-two" src="img/row-3-column-2.jpg" alt="row 3 column 2">
+
+                    <img id="movement-one" src="img/row-3-column-3.jpg" alt="row 3 column 3">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js">
+        </script>
+
+        <script src="draggability/draggabilly.pkgd.min.js"></script>
+
+        <script>
+            var $draggable = $('.rows > img').draggabilly({
+                // options...
+                })
+        </script>
+
+            
+
+    </body>
+</html>
