@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page | Stardew Valley Guide</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <meta name="description" content="Homepage for the Beginners Guide to the First Year Guide to Stardew Valley. Contains generic information on the video game and gives readers a general overview of what the guide will contain.">
+
+        <style>
+            #header {
+                background-image: url(img/home/home-background.jpeg);
+            }
+
+            #title-box {
+                width: 600px;
+                height: 300px;
+
+                background-image: url(img/home/home-title.webp);
+                background-size: cover;
+
+                transition: all 1s;
+            }
+
+            #title-box:hover {
+                transform: scale(1.2);
+            }  
+            
+            h1{
+                line-height: 100px;
+            }
+
+            body {
+                background-color: lightskyblue;
+            }
+
+            #big-wrapper {
+                display: flex;
+                justify-content: center;
+
+                width: 1460px;
+            }
+
+            #left-column {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .textbox {
+                height: 600px;
+                width: 750px;
+
+                margin: 50px;
+
+                background-color: #e1e6ec;
+            }
+
+            #picture-box {
+                height: 600px;
+                width: 450px;
+                margin-top: 50px;
+
+                background-color: #e1e6ec;
+                
+
+                background-image: url(img/home/no-heart.png);
+                background-size: contain;
+                background-position: center;
+
+                transition: all 0.5s;
+            }
+
+            #picture-box:hover {
+                background-image: url(img/home/heart.png);
+                background-size: contain;
+                background-position: center;
+            }
+
+            #egg {
+                float: right;
+
+                position: relative;
+                bottom: 50px;
+                right: 200px;
+
+                visibility: hidden;
+
+                transition: all 1s;
+
+            }
+
+            #chicken {
+                float: right;
+
+                position: relative;
+                bottom: 60px;
+                right: 250px;
+
+                transition: all 1s;
+            }
+
+            #chicken:hover {
+                transform: translateX(210px);
+            }
+
+            #chicken:hover + #egg {
+                visibility: visible;
+            }
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+
+            <div id="title-box"></div>
+
+           <h1 id="title">A Beginner's Guide To Year 1</h1>
+
+        </div>
+
+        <div id="navbar">
+            
+            <ul id="menu">
+                <li><a id="highlight-nav" href="home.html">Home</a></li>
+                <li><a>Spring</a></li>
+                <li><a>Summer</a></li>
+                <li><a>Fall</a></li>
+                <li><a>Winter</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            
+        </div>
+
+        <div id="big-wrapper">
+
+            <div id="left-column">
+
+                <div class="textbox">
+                    <h2>Welcome to the Valley...</h2>
+
+                    <p>
+                        Hello Farmer! Welcome to the lovely, beautiful town of Pelican Town!
+                        I understand that it may be some time until you come to terms with your
+                        grandfather's passing, but please let me know if there is anything that I
+                        or any one of Pelican Town's residents can do to assist you.
+                    </p>
+
+                    <p>
+                        I have left behind this guide to assist you during your first year in the Valley
+                        so that you may grow accustomed to and explore everything this town and surrounding area
+                        has to offer.
+                    </p>
+
+                    <p>
+                        This guide will give you a comprehensive idea for what to expect during your first year
+                        as well as give you suggestions for what you should do. From what crops to plant to what to
+                        do at each festival, this guide will have it all.
+                    </p>
+
+                    <p>
+                        If at any point you believe that there is something missing or that you would like further
+                        information on a topic, I suggest you also utilize this guide along with the official Stardew
+                        Valley Wikipedia so that you may gain the best understanding of the game. If the Wikipedia still
+                        does not answer your questions, there will be a form that you may fill out in the "About" section
+                        where you may ask further questions.
+                    </p>
+
+                    <p>
+                        That's all I have to say! Happy Farming, Farmer!
+                    </p>
+
+                    <img id="chicken" src="img/home/White-Chicken.png" alt="White Chicken">
+                    <img id="egg" src="img/home/white-egg.png" alt="White Egg">
+                    
+
+                </div>
+
+            </div>
+
+            <div id="picture-box"></div>
+
+        </div>
+
+        <div id="footer">
+            <em><strong>University of Southern California &copy; 2023</strong></em>
+        </div>
+
+    </body>
+</html>
