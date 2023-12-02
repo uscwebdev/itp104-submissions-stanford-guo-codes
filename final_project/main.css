@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Stardew Font" ;
+    src: url('fonts/Stardew_Valley.ttf');
+}
+
+@font-face {
+    font-family: "Textbox" ;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+#header {
+    height: 600px;
+    line-height: 600px;
+    text-align: center  ;
+    font-size: 2em;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-family: "Stardew Font", sans-serif;
+    color: gold;
+}      
+
+h1 {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    background-color: lightskyblue;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    
+    background-color: cornflowerblue;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    background-color: #028a0f;
+
+    width: 200px;
+    text-align: center;
+
+    margin: 0px 2px;
+}
+
+#navbar a {
+    color: floralwhite;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+
+    transition: all 0.5s;
+}
+
+#navbar a:hover, #navbar #highlight-nav{
+    color: floralwhite;
+    background-color: #5DBB63
+}
+
+h2 {
+    line-height: 60px;
+    text-align: center;
+
+    background-color: #4F9e26;
+    margin-top: 0px;
+
+    font-family: "Stardew Font", sans-serif;
+    color: floralwhite;
+    text-shadow: 1px 1px 2px black;
+    font-size: 3em;
+    
+}
+
+p {
+    padding: 0px 25px;
+    font-size: 1.2em;
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    background-color: rgb(0, 0, 0, 0.6);
+    font-family: "Stardew Font", sans-serif;
+    font-size: 1.5em;
+    color: floralwhite;
+    text-align: center;
+    
+    visibility: hidden;
+}
+
+#footer {
+    color: #f4d497;
+    background-color: #b66c3f;
+    text-align: center;
+    font-size: 1.1em;
+
+    height: 50px;
+    line-height: 50px;
+}
+
+#other-big-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.row-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1000px;
+}
+
+#square-textbox-one {
+    max-height: 400px;
+    width: 700px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#square-textbox-two {
+    max-height: 400px;
+    width: 700px;
+
+    margin-top: 50px;
+    margin-left: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#square-photo-one {
+    height: 250px;
+    width: 250px;
+
+    margin-top: 50px;
+    margin-left: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#square-photo-one > img {
+    height: 100%;
+    width: auto;
+}
+
+#square-photo-one:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+#square-photo-two {
+    height: 250px;
+    width: 250px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#square-photo-two > img {
+    height: 100%;
+    width: auto;
+}
+
+#square-photo-two:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+#short-textbox-one {
+    max-height: 500px;
+    width: 607.15px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#short-textbox-two {
+    max-height: 500px;
+    width: 505.34px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#long-photo-one {
+    height: 250px;
+    width: 342.85px;
+
+    margin-top: 50px;
+    margin-left: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#long-photo-one > img {
+    height: 100%;
+    width: auto;
+}
+
+#long-photo-one:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+#long-photo-two {
+    height: 250px;
+    width: 444.66px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#long-photo-two > img {
+    height: 100%;
+    width: auto;
+}
+
+#long-photo-two:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+#short-textbox-one {
+    max-height: 1000px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#short-textbox-two {
+    max-height: 1000px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+
+    background-color: #e1e6ec;
+}
+
+#long-photo-one {
+    height: 250px;
+
+    margin-top: 50px;
+    margin-left: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#long-photo-one > img {
+    height: 100%;
+    width: auto;
+}
+
+#long-photo-one:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+#long-photo-two {
+    height: 250px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#long-photo-two > img {
+    height: 100%;
+    width: auto;
+}
+
+#long-photo-two:hover > .overlay {
+    visibility: visible;
+    padding-top: 125px;
+}
+
+
+
+
